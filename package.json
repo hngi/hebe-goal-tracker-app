@@ -1,0 +1,27 @@
+{
+  "name": "hebe-goal-tracker-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/hngi/hebe-goal-tracker-app",
+  "author": "Abdulhafiz Ahmed <abdulhafizahmed01@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env ./node_modules/.bin/nodemon app.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "cross-env": "^6.0.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-promise-router": "^3.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.1",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
