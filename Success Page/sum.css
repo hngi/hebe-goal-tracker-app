@@ -3,9 +3,10 @@ main{
 	flex:1;
 	flex-direction:row;
 	justify-content:center;
+	color: #1B2326;
 }
 h1{
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 35px;
 }
 button  {
@@ -18,7 +19,6 @@ border-style: none;
 margin-top:30px;
 }
 p{
-	font-family: 'Fira Sans', sans-serif;
 	font-size: 10px;
 color:#afa3a3a3;
 }
