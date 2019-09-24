@@ -2,7 +2,8 @@ main{
 	display: flex;
 	flex-direction: row;
 	width:100%;
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Open sans', sans-serif;
+	color:#1B2326;
 }
 
 .bg_img,.signup_area{
