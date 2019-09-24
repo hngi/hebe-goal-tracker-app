@@ -8,8 +8,8 @@ const mongoose = require('mongoose')
 const User = require('./models/user')
 const app = express()
 const PORT = process.env.PORT || 8000
-// const url = `mongodb://team_hebe:teamhebe123@ds145283.mlab.com:45283/team_hebe_goal_tracker_app`
-const url = 'mongodb://localhost/teamhebeauth'
+ const url = `mongodb://team_hebe:teamhebe123@ds145283.mlab.com:45283/team_hebe_goal_tracker_app`
+//const url = 'mongodb://localhost/teamhebeauth'
 mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true},()=>{
   console.log('connected to database')
 })
