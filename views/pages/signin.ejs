@@ -1,11 +1,20 @@
 <% include ../partials/head%>
 
-<p>Login Page</p>
-<form action="/signin" method="POST">
-  <input type="text" name="username" placeholder="username"/>
-  <input type="password" name="password" placeholder="password"/>
-  <input type="submit" value="Submit"/>
-</form>
+<%if(!user){%>
+  <p>Login Page</p>
+  <form action="/signin" method="POST">
+    <input type="text" name="username" placeholder="username"/>
+    <input type="password" name="password" placeholder="password"/>
+    <input type="submit" value="Submit"/>
+  </form>
+<%} else {%>
+  <form>
+    <input type="text" name="username" placeholder="username" disabled/>
+    <input type="password" name="password" placeholder="password" disabled/>
+  </form>
+  <p>You are signed in, go to <a href="/dashboard">Dashboard</a> or 
+  <a href="/signout">Signout</a></p>
+<%}%>
 
 
 

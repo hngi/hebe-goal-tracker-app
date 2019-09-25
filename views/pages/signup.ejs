@@ -2,9 +2,31 @@
 
 <p>Signup Page</p>
 <form action="/signup" method="POST">
-  <input type="text" name="username" placeholder="username"/>
-  <input type="password" name="password" placeholder="password"/>
-  <input type="submit" value="Submit"/>
+  <label for="first-name">
+    <input type="text" name="first-name" id="first-name" placeholder="First Name">
+  </label>
+
+  <label for="last-name">
+    <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+  </label>
+
+  <label for="email">
+    <input type="email" name="email" id="email" placeholder="Email">
+  </label>
+
+  <label for="username">
+    <input type="text" name="username" id="username" placeholder="Username">
+  </label>
+
+  <label for="password">
+    <input type="password" name="password" id="password" placeholder="Password">
+  </label>
+
+  <label for="confirm-password">
+    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password">
+  </label>
+  <p class="login-link"><a href="/signin">Existing member</a></p>
+  <button type="submit" class="register-btn">Register</button>
 </form>
 
 <% include ../partials/footer %>
