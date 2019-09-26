@@ -1,0 +1,11 @@
+<% include ../partials/head%>
+
+<p>This is dashboard page</p>
+<p>signed in as <%=user.username%></p>
+<h2>Welcome <%= user.firstname %> <%= user.lastname %></h2>
+<a href="signout">Signout</a>
+<!-- USE FETCH TO GET GOALS FOR USER -->
+<script src="/assets/js/goals.js"></script>
+
+
+<% include ../partials/footer%>
