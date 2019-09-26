@@ -1,11 +1,46 @@
 <% include ../partials/head%>
 
-<p>Login Page</p>
-<form action="/signin" method="POST">
-  <input type="text" name="username" placeholder="username"/>
-  <input type="password" name="password" placeholder="password"/>
-  <input type="submit" value="Submit"/>
-</form>
+<%if(!user){%>
+  <main>
+
+    <div class="back_img"><img src="image.png" alt="children image" class="arc_img">
+      <div class="overlay">
+        <h2>You are Limitless!</h2>
+        <p>Hebe...solution for the achievers</p>
+      </div>
+    </div>
+    <div class="logo"><img src="hebe.jpg"></div>
+    <div class="logo_hide"><img src="hebe2.png"></div>
+    <div class="aside">
+      <p class="welcome_text">Welcome to Hebe</p>
+      <p class="little">...Best Goal tracker Tool</p>
+      
+      <form method="post" action="" class="login_form">
+        <fieldset>
+          <p class="login_text">Login</p>
+          <p class="little little_second">Sign in with your username or email and password</p>
+          
+          <p><input type="text" placeholder="Username or email"></p>
+          <p><input type="password" placeholder="Password"></p>
+          <p class="forgot"><input type="checkbox" name=""><span class="check">Keep me logged in</span><a href="#">Forgot Password?</a></p>
+          <p><input type="submit" value="Verify"></p>
+        
+          <div class="social">
+            <button class="google"><i class="fa fa-google-plus-official" aria-hidden="true"></i> login with Google</button>
+            <button class="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i> login with Facebook</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+<%} else {%>
+  <form>
+    <input type="text" name="username" placeholder="Username or email" disabled/>
+    <input type="password" name="password" placeholder="Password" disabled/>
+  </form>
+  <p>You are signed in, go to <a href="/dashboard">Dashboard</a> or 
+  <a href="/signout">Signout</a></p>
+<%}%>
 
 
 
