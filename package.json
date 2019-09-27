@@ -16,7 +16,10 @@
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "express-promise-router": "^3.0.3",
+<<<<<<< HEAD
     "jsonwebtoken": "^8.5.1",
+=======
+>>>>>>> db39cf07c9f49231757c09cf39debcdfdfcafd74
     "express-session": "^1.16.2",
     "mongoose": "^5.7.1",
     "morgan": "^1.9.1",
@@ -27,5 +30,12 @@
     "nodemon": "^1.19.2",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^5.0.1"
+  },
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon app.js",
+    "start": "node app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
   }
 }
