@@ -1,0 +1,96 @@
+<% include ../partials/head %>
+
+	<header>
+  	<div class="aside">
+    <h1><strong>Hebe</strong><br> 
+    Goal Tracker</h1>
+    </div> 
+    <p><em style="padding-left: 1180px;">Hi, Brandone </em><img src="https://res.cloudinary.com/sape/image/upload/v1566919161/picture/IMG_20190518_183300_785_500x466_2_sunyog.jpg" alt="" class="avatar"> </p>
+
+    <br>
+    <nav>
+    	<div>
+      <ul>
+        <li id="li-1"><i class="fa fa-plus"></i><a href="#">Goal</a></li>
+        <li id="li-2"><i class="fa fa-pencil-square-o"></i><a href="#">Report</a></li>
+        <li id="li-3"><i class="fa fa-sign-out"></i><a href="#">Log Out</a></li>
+      </ul>
+      </div>
+    </nav>
+    
+  </header>	
+  <div id="popup"> 
+  	<div id="popup_content">
+  		<form method="">
+  			<table>
+  				<tr id="head1">
+  					<th colspan="2">Add goal</th>
+  					<th></th>
+  				</tr>
+  				<tr>
+  					<td>Name:<br><input type="text" name="text" id="input_N"></td>
+  					<td  style="margin-left: 21px;">Due Date:<br><input type="date" name="date" id="input_D"></td>
+  				</tr>
+  				<tr>
+  					<td colspan="2">Description:<br><textarea></textarea></td>
+  					<td></td>
+  				</tr>
+  				<tr>
+  					<td>Priority:<br>
+  						<select id="select_1">
+  							<option value="">High</option>
+  							<option value="medium">Medium</option>
+  							<option value="low">Low</option>
+  					</select></td>
+  					<td>Measure:<br>
+  						<select id="select_2">
+  							<option value="">Easy</option>
+  							<option value="possible">Possible</option>
+  							<option value="tough">Tough</option>
+  							<option value="impossible">Impossible</option>
+  						</select></td>
+  				</tr>
+  				<tr id="footer1">
+  					<td><input type="submit" name="save" value="Save" id="submit"></td>
+  					<td id="close_popup"><input type="submit" id="submit" name="cancel" value="Cancel"></td>
+  				</tr>
+  			</table>
+  		</form>
+  		
+  	</div>
+  	
+  </div>
+
+  <div class="main">
+
+    <article>
+      <h1><i class="fa fa-dot-circle-o" style="color: red;font-size: 35px;
+      margin-right: 8px;"></i>Goals</h1>
+      <div>
+      <select>
+      	<option value="" selected disabled> spend quality time with my children</option>
+      	<option value="edit">Edit</option>
+      	<option value="delete">Delete</option>
+      </select></div>
+     <div>
+      <select>
+      	<option value="" selected disabled> Get to HNG final Task  </option>
+      	<option value="edit">Edit</option>
+      	<option value="delete">Delete</option>
+      </select></div>
+      <div>
+      <select>
+      	<option value="" selected disabled> Drink 3 litres of water </option>
+      	<option value="edit">Edit</option>
+      	<option value="delete">Delete</option>
+      </select></div>
+      <select>
+      	<option value="" selected disabled> Achieve assigned Task </option>
+      	<option value="edit">Edit</option>
+      	<option value="delete">Delete</option>
+      </select></div>
+    </article>
+    
+  </div>
+
+<% include ../partials/footer %>

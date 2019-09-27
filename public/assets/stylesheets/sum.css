@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+main{
+	display: flex;
+	flex:1;
+	flex-direction:row;
+	justify-content:center;
+	color: #1B2326;
+	width: 100%;
+}
+h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 35px;
+}
+
+.floating_text {
+	position: absolute;
+	top: 40%;
+	left: 15%;
+}
+ 
+.floating_text h2 {
+	font-size: 2.7rem;
+	color: #fff;
+}
+
+.floating_text p {
+	color: #fff;
+	margin-left: 20%;
+}
+
+.hebelogo img {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	margin-left: 29.4rem;
+	margin-top: -5rem;
+}
+
+.hebelogo_hide img {
+	display: none;
+}
+
+#submit_button  {
+	background: #628239;
+border-radius:5px;
+font-family: 'Rubik', sans-serif;
+padding: 10px 90px;
+color: white;
+border-style: none;
+margin-top:30px;
+cursor: pointer;
+}
+p{
+	font-size: 12px;
+color:#afa3a3a3;
+}
+#text {
+	text-align: center;
+	width:50%;
+	margin-top: 90px;
+}
+#vector{
+	height: 8vw;
+	max-width: 100%;
+
+}
+#image{
+	width: 50%;
+	height:49vw;
+	object-fit: cover;
+
+}
+
+@media (max-width:1100px){
+   main{
+   	flex-direction:column;
+   }
+   #text,#image{
+   	  width:100%;
+   }
+   .hebelogo img {
+   	display: none;
+   }
+   .hebelogo_hide img {
+   	display: block;
+   	width: 100px;
+	height: 40px;
+	margin-left: auto;
+   }
+   .floating_text {
+   	  top: 20%;
+   }
+}

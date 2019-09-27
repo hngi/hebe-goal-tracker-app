@@ -1,34 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/assets/stylesheets/goals.css">
-  <link rel="stylesheet" href="/assets/stylesheets/signin.css">
-  <link rel="stylesheet" href="/assets/stylesheets/signup.css">
-  <link rel="stylesheet" href="/assets/stylesheets/statistics.css">
-  <link rel="stylesheet" href="/assets/stylesheets/sum.css">
-
-  <title>Title</title>
-  <style type="text/css">
-    /*CSS of Add Goal Page and Goals page*/
-
 body {
       font-family: Open Sans;
     font-style: normal;
 }
-aside {
+.aside {
   position: absolute;
 width: 530px;
 height: 905px;
 left: -249px;
 top: -4px;
 
-background: url(yemen-chameleon-233095__480.jpg), #8FCFAA;
+background: url("https://res.cloudinary.com/dqpoj0kcn/image/upload/v1569484149/Rectangle_2.1.svg");
 opacity: 0.8;
 }
-aside h1 {
+.aside h1 {
   float: right;
 
 }
@@ -86,7 +70,7 @@ border-radius: 6px 6px 0px 0px;
 nav {
   
 }
-main {
+.main {
   position: absolute;
 width: 1214px;
 height: 673px;
@@ -312,7 +296,3 @@ border: 1px solid #628239;
 border-radius: 0px 0px 6px 6px;
 
 }
-
-  </style>
-</head>
-<body>
